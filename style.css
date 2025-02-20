@@ -1,0 +1,182 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Parent Container */
+
+.container {                          
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #e91e63;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Cards Css using same class for all to make code look more clean */
+
+.option {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.option:hover {
+    border-color: #e91e63;
+    transform: scale(1.02);
+}
+
+.option.active {
+    border: 2px solid #e91e63;
+    background-color: #ffe5ec;
+}
+
+/* Used Flex to manage design effectly */
+
+.label{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left{
+    display: flex;
+}
+
+.input{
+    padding-top: 0.5rem;
+}
+
+.unit{
+    line-height: 0.3rem;
+    margin: 2px;
+    padding-top: 7px ;
+    padding-left: 7px;
+}
+
+.unit > h4{
+    display: inline;
+}
+
+.discount {
+    background: #e91e63;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+    
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.price {
+    font-weight:600;
+    float: right;
+}
+
+.old-price{
+    color: gray;
+    font-size:x-small;
+    margin-left: -2rem;
+}
+
+.selections {
+    display: none;
+    gap: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Used table for selections */
+
+table{
+    width: 80%;
+    margin-left: 2rem;
+}
+
+td, th {
+    text-align: left;
+    color: #5e5656;
+}
+
+.option.active .selections {
+    display: flex;
+}
+
+select {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.size{
+    width: 90%;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 2px;
+    margin-top: -7px;
+}
+
+.free-delivery {
+    color: #e91e63;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background: #c2185b;
+    transform: scale(1.05);
+}
+
+.powered {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    text-align: right;
+}
